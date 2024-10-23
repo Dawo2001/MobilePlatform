@@ -2,16 +2,26 @@
 
 Platforma Mobilna
 
+
+
 # Ważne repozytoria
 
-Repozytorium z inicjalizacją i sterowaniem głowicą: 
-```https://github.com/Pinjesz/PiProject/tree/main```
+Repozytorium z inicjalizacją i sterowaniem głowicą: https://github.com/Pinjesz/PiProject/tree/main
 
-Repozytorium z kodem odpowiedzialnym za podwozie:
-```https://github.com/Szewoj/MARMOT-grasshopper/tree/main```
+Repozytorium z kodem odpowiedzialnym za podwozie: https://github.com/Szewoj/MARMOT-grasshopper/tree/main
 
-Repozytorium z aplikacją kokpitu sterowniczego:
-```https://github.com/pkacperski/mobile-platform-repo```
+Repozytorium z aplikacją kokpitu sterowniczego: https://github.com/pkacperski/mobile-platform-repo
+
+
+# Dependencies
+Na komputerze osobistym należy zainstalować:<br>
+• Python
+```sudo apt install python3```<br>
+• OpenCV
+```$ sudo apt-get install python3-opencv```<br>
+Na komputerach Platformy Mobilnej środowisko powinno być już przygotowane do dalszej pracy. Jeśli nie - należy zainstalować potrzebne biblioteki zgodnie z instrukcjami we wspomnianych wcześniej repozytoriach.
+
+
 
 # Elementy platformy
 
@@ -22,6 +32,10 @@ Platforma Mobilna składa się z:<br>
 • pojazdu, który posiada serwomechanizmy i silniki krokowe, działa na Raspberry Pi pojazdu, zasilany jest z powerbanka i umieszczonej w ramie pojazdu baterii.<br>
 
 Do uruchomienia platformy niezbędny jest komputer osobisty i dostęp do Wi-Fi. Do dyspozycji jest również komputer Nvidia Jetson Nano, na którym według założeń projektu będą umieszczane wszelkie złożone algorytmy sterowania i autonomii platformy.
+
+
+
+
 
 
 # Podłączenie platformy
@@ -37,7 +51,16 @@ Aby móc komunikować się z komputerami platformy należy podłączyć się do 
    login: ```pi```<br>
    hasło: ```raspberry```<br>
 5. W pliku wpa-supplicant należy dodać swoją sieć Wi-Fi komendą ```sudo nano /etc/wpa_supplicant/wpa_supplicant.conf```
+
+
+
+
+
+
+
+   
 # Sterowanie platformą
+Do sterowania platformą wymagany jest kontroler do gier. Musi być on tak skonfigurowany, by mógł być wykryty przez klasę XboxController (więcej informacji w https://github.com/bzier/TensorKart/blob/master/utils.py).
 
 Poniżej znajduje się instrukcja uruchomienia sterowania platformą z poziomu komputera osobistego:
 1. Podłącz kontroler do komputera osobistego.
@@ -48,21 +71,19 @@ Poniżej znajduje się instrukcja uruchomienia sterowania platformą z poziomu k
 6. Na komputerze osobistym uruchom plik ```jetson/controler.py```
 
 Sterowanie:<br>
-• lewy drązek analogowy - ruch kół lewo/prawo,<br>
-• prawy drązek analogowy - pochylanie podwozia,<br>
+• lewy drążek analogowy - ruch kół lewo/prawo,<br>
+• prawy drążek analogowy - pochylanie podwozia,<br>
 • lewy przycisk spustowy - ruch platformy do tyłu,<br>
 • prawy przycisk spustowy - ruch platformy do przodu,<br>
 • przyciski kierunkowe D-Pad - ruch głowicą lewo/prawo i góra/dół,<br>
 • lewy przycisk ramienia - tryb manualny ruchu głowicy,<br>
 • prawy przycisk spustowy - tryb autonomiczny ruchu głowicy.<br>
 
-By uruchomić możliwość manualnego i autonomicznego sterowania głowicą, należy na komputerze osobistym zamiast ```controler.py``` uruchomić ```kamera.py```.
+By uruchomić możliwość manualnego i autonomicznego sterowania głowicą, należy na komputerze osobistym zamiast ```controler.py``` uruchomić ```kamera.py```. Wówczas po odczekaniu do komputera osobistego zostanie przesyłany obraz z kamer platformy i po zmianie trybu sterowania na autonomiczny możliwe będzie śledzenie tarczki pomiarowej przez głowicę.
 
 
 
 
-Na
-Następnie należy ur
 
 # Konstrukcja i dekonstrukcja platformy
 By rozdzielić Platformę Mobilną na pojazd i głowicę, należy wpierw odłączyć wszelkie połączenia elektryczne mikrokomputerów z powerbankiem oraz baterią. By odłączyć platformę łączącą od pojazdu, należy odkręcić wszystkie śrubki w dolnej części platformy, łączące czarne plastikowe uchwyty z ramą podwozia (zdjęcie niżej). Wówczas można będzie ostrożnie zdjąć łącznik i głowicę z pojazdu. 
