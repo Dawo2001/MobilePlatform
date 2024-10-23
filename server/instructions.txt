@@ -1,0 +1,7 @@
+./MPcomms/nginx-settings/apply_settings.sh
+./MPcomms/start_nginx.sh
+python MPcomms/camera_server.py
+
+
+1240 -> 360 stopni
+1400 -> 8 stopni
