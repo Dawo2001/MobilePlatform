@@ -4,14 +4,25 @@ Platforma Mobilna
 
 # Ważne repozytoria
 
-W razie problemów ze środowiskiem głowicy lub serwerem Nginx, instalacja wszystkich bibliotek i zasobów została opisana pod linkiem: 
-https://github.com/Pinjesz/PiProject/tree/main
+Repozytorium z inicjalizacją i sterowaniem głowicą: 
+```https://github.com/Pinjesz/PiProject/tree/main```
 
-Kod odpowiedzialny za podwozie znajduje się pod linkiem:
-https://github.com/Szewoj/MARMOT-grasshopper/tree/main
+Repozytorium z kodem odpowiedzialnym za podwozie:
+```https://github.com/Szewoj/MARMOT-grasshopper/tree/main```
 
-Aplikacja kokpitu sterowniczego powinna zostać zainstalowana na komputerze osobistym zgodnie z instrukcją pod poniższym linkiem:
-https://github.com/pkacperski/mobile-platform-repo
+Repozytorium z aplikacją kokpitu sterowniczego:
+```https://github.com/pkacperski/mobile-platform-repo```
+
+# Elementy platformy
+
+Dokładny opis Platformy Mobilnej, wraz ze wszystkimi elementami, połączeniami i działaniem można znaleźć w mojej pracy dyplomowej pt. "Integracja zrealizowanej głowicy pan-tilt z nową platformą mobilną."
+
+Platforma Mobilna składa się z:<br>
+• głowicy, która posiada silniki krokowe i kamery, działa na Raspberry Pi głowicy, zasilana jest z dołączonej do platformy baterii i powerbanka,<br>
+• pojazdu, który posiada serwomechanizmy i silniki krokowe, działa na Raspberry Pi pojazdu, zasilany jest z powerbanka i umieszczonej w ramie pojazdu baterii.<br>
+
+Do uruchomienia platformy niezbędny jest komputer osobisty i dostęp do Wi-Fi. Do dyspozycji jest również komputer Nvidia Jetson Nano, na którym według założeń projektu będą umieszczane wszelkie złożone algorytmy sterowania i autonomii platformy.
+
 
 # Podłączenie platformy
 Aby móc komunikować się z komputerami platformy należy podłączyć się do nich z poziomu komputera osobistego. Poniżej znajduje się instrukcja podłączenia do komputerów Raspberry Pi:
