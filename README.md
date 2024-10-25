@@ -9,12 +9,11 @@ Owo repozytorium zawiera dwa foldery przeznaczone do umieszczenia w dwóch róż
 Folder ```jetson``` obsługuje poruszanie platformą z poziomu komputera osobistego bądź, po skonfigurowaniu, komputera Nvidia Jetson Nano. Folder należy przenieść do odpowiedniego komputera i z jego poziomu uruchamiać opisywane niżej skrypty.<br><br>
 Folder ```server``` posiada pliki, które na moment zakończenia pracy nad moją pracą dyplomową (wrzesień 2024), znajdują się na komputerze Raspberry Pi podłączonym do głowicy Platformy Mobilnej, w folderze również nazwanym ```server```.<br><br>
 Znajdujące się w tym repozytorium skrypty, z dodatkiem skryptów znajdujących się już na komputerach Platformy, pozwalają na poruszanie Platformą zdalnie za pomocą kontrolera oraz obsługę algorytmu śledzenia znaczników. W celu uzyskania dodatkowych funkcjonalności poniżej zamieściłem łącza do pozostałych repozytoriów, z których korzystałem, a które mogą być także przydatne w dalszej pracy.<br>                                                                                                                                                                                                                                            
-Repozytorium z inicjalizacją i sterowaniem głowicą: https://github.com/Pinjesz/PiProject/tree/main
+Repozytorium z inicjalizacją i sterowaniem głowicą: [https://github.com/Pinjesz/PiProject/tree/main](https://github.com/Pinjesz/PiProject.git)
 
-Repozytorium z kodem odpowiedzialnym za podwozie: https://github.com/Szewoj/MARMOT-grasshopper/tree/main
+Repozytorium z kodem odpowiedzialnym za podwozie: [https://github.com/Szewoj/MARMOT-grasshopper/tree/main](https://github.com/Szewoj/MARMOT-grasshopper.git)
 
-Repozytorium z aplikacją kokpitu sterowniczego: https://github.com/pkacperski/mobile-platform-repo
-
+Repozytorium z aplikacją kokpitu sterowniczego: [https://github.com/pkacperski/mobile-platform-repo](https://github.com/pkacperski/mobile-platform-repo.git)
 
 # Dependencies
 Na komputerze osobistym należy zainstalować:<br>
@@ -130,11 +129,11 @@ The ```server``` folder contains files which, as of the completion of my thesis 
 The scripts in this repository, together with scripts already on the Platform’s computers, enable remote control of the Platform using a controller and support for a marker-tracking algorithm. For additional functionalities, I have included links below to other repositories I used, which may also be helpful for future work.
 
 
-Repository for initialization and head control: https://github.com/Pinjesz/PiProject/tree/main
+Repository for initialization and head control: [https://github.com/Pinjesz/PiProject/tree/main](https://github.com/Pinjesz/PiProject.git)
 
-Repository with code responsible for the chassis: https://github.com/Szewoj/MARMOT-grasshopper/tree/main
+Repository with code responsible for the chassis: [https://github.com/Szewoj/MARMOT-grasshopper/tree/main](https://github.com/Szewoj/MARMOT-grasshopper.git)
 
-Repository with the control cockpit application: https://github.com/pkacperski/mobile-platform-repo
+Repository with the control cockpit application: [https://github.com/pkacperski/mobile-platform-repo](https://github.com/pkacperski/mobile-platform-repo.git)
 
 
 
